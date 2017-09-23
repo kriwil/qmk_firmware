@@ -124,6 +124,9 @@ uint8_t matrix_cols(void)
 
 void matrix_init(void)
 {
+    MCUCR |= _BV(JTD);
+    MCUCR |= _BV(JTD);
+
     debug_enable = true;
     debug_matrix = true;
     debug_mouse = true;
