@@ -8,7 +8,7 @@ extern keymap_config_t keymap_config;
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
-#define _FKEYS 0
+#define _FKEYS 1
 #define _ADJUST 16
 
 enum custom_keycodes {
@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_FKEYS] = KEYMAP( \
   _______, _______, _______, _______, _______, _______, KC_F1,    KC_F2, KC_F3, KC_F4,  KC_F5,  KC_F6,  \
-  _______, KC_Q, _______, _______, _______, _______, KC_F7,    KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, \
+  _______, _______, _______, _______, _______, _______, KC_F7,    KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, \
   _______, _______, _______, _______, _______, _______, KC_LALT,  KC_Q,  KC_W,  KC_E,   KC_R,   KC_T,   \
   _______, _______, _______, _______, _______, _______, KC_LCTRL, KC_A,  KC_R,  KC_D,   KC_F,   KC_G,   \
   _______, _______, _______, _______, _______, _______, ADJUST,   KC_Z,  KC_X,  KC_C,   KC_V,   KC_B    \
