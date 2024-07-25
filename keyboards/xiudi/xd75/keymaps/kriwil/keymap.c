@@ -46,11 +46,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* LOWER
      * .--------------------------------------------------------------------------------------------------------------------------------------.
-     * | FLASH  |        |        |        |        |        | MDPREV | PAUSE  | MDNEXT |        |        |        | -      | =      | \      |
+     * | FLASH  |        |        |        |        |        | MDPREV | PAUSE  | MDNEXT |        |        |        |        |        |        |
      * '--------------------------------------------------------------------------------------------------------------------------------------'
-     * |        |        |        |        |        |        |        |        |        | \      |        |        | [      | ]      | DELETE |
-     * '--------------------------------------------------------------------------------------------------------------------------------------'
-     * |        |        |        |        |        | -      |        |        |        | =      |        |        |        |        |        |
+     * |        |        |        |        |        |        | VOL -  | MUTE   | VOL+   | \      | INSERT | HOME   | PGUP   |        | DELETE |
+     * '--------------------------------------------------------------------------------------------------------------------'-----------------'
+     * |        |        |        |        |        | -      |        |        |        | =      | DELETE | END    | PGDOWN |        |        |
      * '--------------------------------------------------------------------------------------------------------------------------------------'
      * |        |        |        |        |        | [      |        |        |        | ]      |        |        |        |        |        |
      * '--------------------------------------------------------------------------------------------------------------------------------------'
@@ -58,30 +58,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * '--------------------------------------------------------------------------------------------------------------------------------------'
      */
     [_LO] = LAYOUT_ortho_5x15( /* FUNCTION */
-        QK_BOOT, _______, _______, _______, _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, _______, _______, KC_MINS, KC_EQL, KC_BSLS,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_BSLS, _______, _______, KC_LBRC, KC_RBRC, KC_DEL,
-        _______, _______, _______, _______, _______, KC_MINS, _______, _______, _______, KC_EQL,  _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, KC_LBRC, _______, _______, _______, KC_RBRC, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+        QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, KC_BSLS, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX, KC_DEL,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_MINS, XXXXXXX, XXXXXXX, XXXXXXX, KC_EQL,  KC_DEL,  KC_END,  KC_PGDN, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LBRC, XXXXXXX, XXXXXXX, XXXXXXX, KC_RBRC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
     ),
     /* RAISE
      * .--------------------------------------------------------------------------------------------------------------------------------------.
-     * | F1     | F2     | F3     | F4     | F5     | F6     |        |        |        |        |        |        | _      | +      | |      |
+     * | F1     | F2     | F3     | F4     | F5     | F6     |        |        |        | F7     | F8     | F9     | F10    | F11    | F12    |
      * '--------------------------------------------------------------------------------------------------------------------------------------'
-     * | F7     | F8     | F9     | F10    | F11    | F12    |        |        |        | |      |        | UP     | {      | }      |        |
+     * |        |        |        |        |        |        |        |        |        | |      |        | UP     |        |        |        |
      * '--------------------------------------------------------------------------------------------------------------------------------------'
      * |        |        |        |        |        |      _ |        |        |        | +      | LEFT   | DOWN   | RIGHT  |        |        |
      * '--------------------------------------------------------------------------------------------------------------------------------------'
-     * |        |        |        |        |        |      { |        |        |        | }      |        |        | INSERT | HOME   | PGUP   |
-     * '--------------------------------------------------------------------------------------------------------------------------------------'
-     * |        |        |        |        |        |        |        |        |        |        |        |        | DELETE | END    | PGDOWN |
+     * |        |        |        |        |        |      { |        |        |        | }      |        |        |        |        |        |
+     * '---------------------------------------------------------------------------------------------------------------------------------------
+     * |        |        |        |        |        |        |        |        |        |        |        |        |        |        |        |
      * '--------------------------------------------------------------------------------------------------------------------------------------'
      */
     [_RA] = LAYOUT_ortho_5x15( /* FUNCTION */
-        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   _______, _______, _______, _______, _______, _______, KC_UNDS, KC_PLUS, KC_PIPE,
-        KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______, _______, _______, KC_PIPE, _______, KC_UP,   KC_LCBR, KC_RCBR, _______,
-        _______, _______, _______, _______, _______, KC_UNDS, _______, _______, _______, KC_PLUS, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______,
-        _______, _______, _______, _______, _______, KC_LCBR, _______, _______, _______, KC_RCBR, _______, _______, KC_INS,  KC_HOME, KC_PGUP,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_DEL,  KC_END,  KC_PGDN
+        KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   XXXXXXX, XXXXXXX, XXXXXXX, KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PIPE, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_UNDS, XXXXXXX, XXXXXXX, XXXXXXX, KC_PLUS, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LCBR, XXXXXXX, XXXXXXX, XXXXXXX, KC_RCBR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
     )
 };
