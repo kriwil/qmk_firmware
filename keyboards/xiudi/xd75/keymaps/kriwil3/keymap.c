@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         _______, XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, XXXXXXX,
         _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
+        _______, XXXXXXX, XXXXXXX, KC_VOLD, KC_VOLU, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, KC_MPRV, KC_MNXT, XXXXXXX, XXXXXXX, _______,
         _______, _______, _______, _______, _______, _______,   _______, QK_BOOT, _______,   _______, _______, _______, _______, _______, _______
     )
 };
