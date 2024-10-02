@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [_LO] = LAYOUT_ortho_5x15( /* FUNCTION */
         _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,     _______, XXXXXXX, _______,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
-        _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,      _______, XXXXXXX, _______,   KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_F12,
+        KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,      _______, XXXXXXX, _______,   KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_F12,
         _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,   _______, XXXXXXX, _______,   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_CAPS,
         _______, KC_EQL,  KC_MINS, KC_PLUS, KC_LBRC, KC_RBRC,   _______, XXXXXXX, _______,   KC_LCBR, KC_RCBR, KC_UNDS, KC_PIPE, KC_BSLS, _______,
         _______, _______, _______, _______, _______, _______,   _______, XXXXXXX, _______,   _______, _______, _______, _______, _______, _______
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [_RA] = LAYOUT_ortho_5x15( /* FUNCTION */
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        _______, XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, XXXXXXX,
+        KC_ESC,  XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, XXXXXXX,
         _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,
         _______, XXXXXXX, XXXXXXX, KC_VOLD, KC_VOLU, XXXXXXX,   _______, XXXXXXX, _______,   XXXXXXX, KC_MPRV, KC_MNXT, XXXXXXX, XXXXXXX, _______,
         _______, _______, _______, _______, _______, _______,   _______, QK_BOOT, _______,   _______, _______, _______, _______, _______, _______
