@@ -74,21 +74,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      |      |SCPT3 |SCPT4 |      |                    |      |      |      |      |      |      |
+ * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |CPSLCK|      |      |SCPT3C|SCPT4C|      |                    |      |      |      |      |      |      |
+ * |      |      |      |SCPT3 |SCPT4 |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
- * |      |     |       |      |      |      |       |    |       |      |      |      |      |      |      |
+ * |CPSLCK|     |       |SCPT3C|SCPT4C|      |       |    |       |      |      |      |      |      |      |
  * `-----------------------------------------|-------|    |-------|-----------------------------------------'
  *                      |      | LGUI |LOWER | SPACE |    | ENTER |RAISE | RALT |      |
  *                      `---------------------------'     '----------------------------'
  */
 [_ADJUST] = LAYOUT(
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX,          XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  XXXXXXX, XXXXXXX, XXXXXXX, LSG(KC_3),       LSG(KC_4),        XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  KC_CAPS, XXXXXXX, XXXXXXX, LCTL(LSG(KC_3)), LCTL(LSG(KC_4)),  XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-                             XXXXXXX,         _______, _______, _______, _______,  _______, _______, XXXXXXX
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX,         XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX,         XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  XXXXXXX, XXXXXXX, XXXXXXX, LSG(KC_3),       LSG(KC_4),       XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  KC_CAPS, XXXXXXX, XXXXXXX, LCTL(LSG(KC_3)), LCTL(LSG(KC_4)), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+                             XXXXXXX,         _______,         _______, _______, _______,  _______, _______, XXXXXXX
   )
 };
 
