@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LCRTL |   A  |   R  |   S  |   T  |   D  |                    |   H  |   N  |   E  |   I  |   O  |  '   |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
- * |LSHIFT|   Z  |   X  |   C  |   V  |   B  |       |    |       |   K  |   M  |   ,  |   .  |   /  | ESC  |
+ * |LSHIFT|   Z  |   X  |   C  |   V  |   B  |       |    |       |   K  |   M  |   ,  |   .  |   /  |RSHIFT/ESC|
  * `-----------------------------------------|-------|    |-------|-----------------------------------------'
   *                     |      | LGUI |LOWER | SPACE |    | ENTER |RAISE | RALT |      |
  *                      `---------------------------'     '----------------------------'
@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LCTRL |   !  |   @  |   #  |   $  |   %  |                    |   ^  |   &  |   *  |   (  |   )  |ENTER |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
- * |LSHIFT|  =   |  -   |  +   |   [  |   ]  |       |    |       |   {  |   }  |   _  |   |  |   \  |RSHIFT|
+ * |LSHIFT|  =   |  -   |  +   |   [  |   ]  |       |    |       |   {  |   }  |   _  |   |  |   \  |RSHIFT/ESC|
  * `-----------------------------------------|-------|    |-------|-----------------------------------------'
  *                      |      | LGUI |LOWER | SPACE |    | ENTER |RAISE | RALT |      |
  *                      `---------------------------'     '----------------------------'
@@ -58,14 +58,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LCTRL | F11  | DEL  | END  |PGDOWN| MUTE |                    | PLAY | LEFT | DOWN |RIGHT | F12  |VOLDN |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
- * |LSHIFT| F1  | F2    | F3   | F4   | F5   |       |    |       | F6   | F7   | F8   | F9   | F10  |RSHIFT|
+ * |LSHIFT| F1  | F2    | F3   | F4   | F5   |       |    |       | F6   | F7   | F8   | F9   | F10  |RSHIFT/ESC|
  * `-----------------------------------------|-------|    |-------|-----------------------------------------'
  *                      |      | LGUI |LOWER | SPACE |    | ENTER |RAISE | RALT |      |
  *                      `---------------------------'     '----------------------------'
  */
 [_RAISE] = LAYOUT(
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  _______, XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,                   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, KC_VOLU,
+  KC_ESC,  XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,                   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, KC_VOLU,
   _______, KC_F11,  KC_DEL,  KC_END,  KC_PGDN, KC_MUTE,                   KC_MPLY, KC_LEFT, KC_DOWN, KC_RGHT, KC_F12,  KC_VOLD,
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   XXXXXXX, XXXXXXX, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
                              XXXXXXX, _______, _______, _______, _______,  _______, _______, XXXXXXX
