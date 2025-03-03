@@ -19,7 +19,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |LCRTL |   A  |   R  |   S  |   T  |   D  |                    |   H  |   N  |   E  |   I  |   O  |  '   |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
  * |LSHIFT|   Z  |   X  |   C  |   V  |   B  |       |    |       |   K  |   M  |   ,  |   .  |   /  |RSHIFT|
- * | ESC  |      |      |      |      |      |       |    |       |      |      |      |      |      | ESC  |
  * `-----------------------------------------|-------|    |-------|-----------------------------------------'
   *                     |      | LGUI |LOWER | SPACE |    | ENTER |RAISE | RALT |      |
  *                      `---------------------------'     '----------------------------'
@@ -28,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   KC_TAB,         KC_Q,     KC_W,   KC_F,    KC_P,    KC_G,                      KC_J,       KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC,
   KC_LCTL,        KC_A,     KC_R,   KC_S,    KC_T,    KC_D,                      KC_H,       KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
-  LSFT_T(KC_ESC), KC_Z,     KC_X,   KC_C,    KC_V,    KC_B,    XXXXXXX, XXXXXXX, KC_K,       KC_M,    KC_COMM, KC_DOT,  KC_SLSH, RSFT_T(KC_ESC),
+  KC_LSFT,        KC_Z,     KC_X,   KC_C,    KC_V,    KC_B,    XXXXXXX, XXXXXXX, KC_K,       KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
                                XXXXXXX, KC_LGUI, MO(_LOWER),   KC_SPC,  KC_ENT,  MO(_RAISE), KC_RALT, XXXXXXX
 ),
 /* LOWER
@@ -39,8 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LCTRL |   !  |   @  |   #  |   $  |   %  |                    |   ^  |   &  |   *  |   (  |   )  |ENTER |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
- * |LSHIFT|  =   |  -   |  +   |   [  |   ]  |       |    |       |   {  |   }  |   _  |   |  |   \  |RSHIFT|
- * | ESC  |      |      |      |      |      |       |    |       |      |      |      |      |      | ESC  |
+ * | ESC  |  =   |  -   |  +   |   [  |   ]  |       |    |       |   {  |   }  |   _  |   |  |   \  | ESC  |
  * `-----------------------------------------|-------|    |-------|-----------------------------------------'
  *                      |      | LGUI |LOWER | SPACE |    | ENTER |RAISE | RALT |      |
  *                      `---------------------------'     '----------------------------'
@@ -49,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                      KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
   _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,                   KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_ENT,
-  _______, KC_EQL,  KC_MINS, KC_PLUS, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, KC_UNDS, KC_PIPE, KC_BSLS, _______,
+  KC_ESC,  KC_EQL,  KC_MINS, KC_PLUS, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, KC_UNDS, KC_PIPE, KC_BSLS, KC_ESC,
                              XXXXXXX, _______, _______, _______, _______,  _______, _______, XXXXXXX
 ),
 /* RAISE
@@ -61,7 +59,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |LCTRL | F11  | DEL  | END  |PGDOWN| MUTE |                    | PLAY | LEFT | DOWN |RIGHT | F12  |VOLDN |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
  * |LSHIFT| F1  | F2    | F3   | F4   | F5   |       |    |       | F6   | F7   | F8   | F9   | F10  |RSHIFT|
- * | ESC  |      |      |      |      |      |       |    |       |      |      |      |      |      | ESC  |
  * `-----------------------------------------|-------|    |-------|-----------------------------------------'
  *                      |      | LGUI |LOWER | SPACE |    | ENTER |RAISE | RALT |      |
  *                      `---------------------------'     '----------------------------'
