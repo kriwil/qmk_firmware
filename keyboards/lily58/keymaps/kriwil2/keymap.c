@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | ESC  |      | INS  | HOME | PGUP |      |                    |      |      | UP   |      |      |VOLUP |
+ * |      |      | INS  | HOME | PGUP |      |                    |      |      | UP   |      |      |VOLUP |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LCTRL | F11  | DEL  | END  |PGDOWN| MUTE |                    | PLAY | LEFT | DOWN |RIGHT | F12  |VOLDN |
  * |------+------+------+------+------+------|-------|    |-------|------+------+------+------+------+------|
@@ -64,11 +64,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                      `---------------------------'     '----------------------------'
  */
 [_RAISE] = LAYOUT(
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  KC_ESC,  XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,                   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, KC_VOLU,
-  _______, KC_F11,  KC_DEL,  KC_END,  KC_PGDN, KC_MUTE,                   KC_MPLY, KC_LEFT, KC_DOWN, KC_RGHT, KC_F12,  KC_VOLD,
-  _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   XXXXXXX, XXXXXXX, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
-                             XXXXXXX, _______, _______, _______, _______,  _______, _______, XXXXXXX
+  XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  S(KC_GRV), XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,                   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, KC_VOLU,
+  _______,   KC_F11,  KC_DEL,  KC_END,  KC_PGDN, KC_MUTE,                   KC_MPLY, KC_LEFT, KC_DOWN, KC_RGHT, KC_F12,  KC_VOLD,
+  _______,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   XXXXXXX, XXXXXXX, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
+                               XXXXXXX, _______, _______, _______, _______,  _______, _______, XXXXXXX
 ),
 /* ADJUST
  * ,-----------------------------------------.                    ,-----------------------------------------.
