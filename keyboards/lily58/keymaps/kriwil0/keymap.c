@@ -64,15 +64,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                      `---------------------------'     '----------------------------'
  */
 [_RAISE] = LAYOUT(
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-  KC_ESC,  XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,                   XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, XXXXXXX,
-  _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, XXXXXXX,                   XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_VOLD, KC_VOLU, _______, _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-                             _______, _______, _______, _______, _______,  _______, _______, _______
+  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, LSG(KC_F1),                LSG(KC_F2), XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  KC_ESC,  XXXXXXX, KC_INS,  KC_HOME, KC_PGUP, XXXXXXX,                   XXXXXXX,    XXXXXXX,  KC_UP,   XXXXXXX, XXXXXXX, XXXXXXX,
+  _______, XXXXXXX, KC_DEL,  KC_END,  KC_PGDN, XXXXXXX,                   XXXXXXX,    KC_LEFT,  KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX,
+  _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_VOLD, KC_VOLU, _______, _______, XXXXXXX,    XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, _______,
+                             _______, _______, _______, _______, _______,  _______,    _______, _______
 ),
 /* ADJUST
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |      |      |      |      |      |SCALE1|                   |SCALE1.|      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
